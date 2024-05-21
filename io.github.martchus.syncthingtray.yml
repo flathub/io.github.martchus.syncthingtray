@@ -61,6 +61,10 @@ modules:
       - type: archive
         url: https://github.com/syncthing/syncthing/releases/download/v1.27.7/syncthing-source-v1.27.7.tar.gz
         sha256: 2572a2fbb425be2998ff045ea08055710182ced5b3673b96107ccaa56b34c5b5
+        x-checker-data:
+          type: anitya
+          project-id: 11814
+          url-template: https://github.com/syncthing/syncthing/releases/download/v$version/syncthing-source-v$version.tar.gz
   - name: boost
     buildsystem: simple
     build-commands:
@@ -68,8 +72,13 @@ modules:
       - ./b2 --with-filesystem -j $FLATPAK_BUILDER_N_JOBS link=static install
     sources:
       - type: archive
-        url: https://boostorg.jfrog.io/artifactory/main/release/1.85.0/source/boost_1_85_0.tar.gz
-        sha256: be0d91732d5b0cc6fbb275c7939974457e79b54d6f07ce2e3dfdd68bef883b0b
+        url: https://boostorg.jfrog.io/artifactory/main/release/1.85.0/source/boost_1_85_0.tar.bz2
+        sha256: 7009fe1faa1697476bdc7027703a2badb84e849b7b0baad5086b087b971f8617
+        x-checker-data:
+          type: anitya
+          project-id: 6845
+          stable-only: true
+          url-template: https://boostorg.jfrog.io/artifactory/main/release/$version/source/boost_${major}_${minor}_$patch.tar.bz2
   - name: cpp-utilities
     buildsystem: cmake-ninja
     config-opts:
@@ -78,6 +87,10 @@ modules:
       - type: git
         url: https://github.com/Martchus/cpp-utilities.git
         tag: v5.24.8
+        commit: 0c652a774eda6a575e838a336456989c96ab369c
+        x-checker-data:
+          type: git
+          tag-pattern: ^v([\d.]+)$
       - type: patch
         path: patches/0001-Specify-the-developer-ID-in-AppStream-meta-data.patch
   - name: qtutilities
@@ -90,6 +103,10 @@ modules:
       - type: git
         url: https://github.com/Martchus/qtutilities.git
         tag: v6.14.0
+        commit: ded20b34a62195a3bd6be6d72d2883fa14e6eac7
+        x-checker-data:
+          type: git
+          tag-pattern: ^v([\d.]+)$
   - name: ForkAwesome
     buildsystem: simple
     build-commands:
@@ -127,6 +144,10 @@ modules:
       - type: git
         url: https://github.com/Martchus/qtforkawesome.git
         tag: v0.2.0
+        commit: d363a5c9b030d292a814838f6526d1eb816ca3a2
+        x-checker-data:
+          type: git
+          tag-pattern: ^v([\d.]+)$
   - name: syncthingtray
     buildsystem: cmake-ninja
     config-opts:
@@ -145,6 +166,10 @@ modules:
         url: https://github.com/Martchus/syncthingtray.git
         tag: v1.5.3
         commit: 744c78f64fc57e344970911724fbd2f41f4a3102
+        x-checker-data:
+          type: git
+          tag-pattern: ^v([\d.]+)$
+          is-important: true
       - type: patch
         path: patches/0002-Disable-Autostart.patch
       - type: patch
