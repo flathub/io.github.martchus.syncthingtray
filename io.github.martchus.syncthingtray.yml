@@ -4,9 +4,12 @@ runtime-version: '6.7'
 sdk: org.kde.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.golang
+base: io.qt.qtwebengine.BaseApp
+base-version: '6.7'
 command: syncthingtray
 finish-args:
   - --device=dri
+  - --env=QTWEBENGINEPROCESS_PATH=/app/bin/QtWebEngineProcess
   # X11 + XShm access
   - --share=ipc
   - --socket=fallback-x11
@@ -40,6 +43,8 @@ cleanup:
   - '*.cmake'
   - '*.la'
   - '*.a'
+cleanup-commands:
+  - /app/cleanup-BaseApp.sh
 modules:
   - name: syncthing
     buildsystem: simple
@@ -156,6 +161,7 @@ modules:
       - -DKF_PACKAGE_PREFIX:STRING='KF6'
       - -DBUILTIN_TRANSLATIONS:BOOL=ON
       - -DBUILTIN_TRANSLATIONS_OF_QT:BOOL=OFF
+      - -DWEBVIEW_PROVIDER=webengine
       - -DJS_PROVIDER=qml
       - -DSYSTEMD_SUPPORT=ON
       - -DNO_PLASMOID=ON
