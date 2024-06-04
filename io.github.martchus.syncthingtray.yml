@@ -86,8 +86,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/cpp-utilities.git
-        tag: v5.24.8
-        commit: 0c652a774eda6a575e838a336456989c96ab369c
+        tag: v5.24.9
+        commit: ad2ea47d368d267191dc610be6e353dadda1d419
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -102,8 +102,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/qtutilities.git
-        tag: v6.14.0
-        commit: ded20b34a62195a3bd6be6d72d2883fa14e6eac7
+        tag: v6.14.1
+        commit: 11d139f53d1fad4b1e7d2bcaf08dae2364942964
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -121,10 +121,10 @@ modules:
   - name: perl-libs
     buildsystem: simple
     build-commands:
-      - 'perl-libs/install.sh'
+      - perl-libs/install.sh
     post-install:
       # Fix eu-strip failed with `Permission denied`.
-      - 'chmod -Rf u+w /app/lib/perl5/site_perl'
+      - chmod -Rf u+w /app/lib/perl5/site_perl
     sources:
       - cpan-generated-sources.json
     cleanup:
@@ -164,8 +164,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/syncthingtray.git
-        tag: v1.5.3
-        commit: 744c78f64fc57e344970911724fbd2f41f4a3102
+        tag: v1.5.4
+        commit: 7b2f0bac469be5d3d581ec2d6216828ca9220425
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
