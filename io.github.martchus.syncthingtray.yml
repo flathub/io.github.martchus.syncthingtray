@@ -159,8 +159,6 @@ modules:
       - -DNO_PLASMOID=ON
       - -DNO_FILE_ITEM_ACTION_PLUGIN=ON
       - -DNO_AUTOSTART_SETTINGS:BOOL=ON
-      - -DMETA_DEVELOPER_ID:STRING=io.github.martchus
-      - -DNO_AUTOSTART_SETTINGS:BOOL=ON
     sources:
       - type: git
         url: https://github.com/Martchus/syncthingtray.git
