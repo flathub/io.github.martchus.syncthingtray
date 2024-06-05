@@ -10,7 +10,7 @@ Flatpak build for [Syncthing Tray](https://github.com/Martchus/syncthingtray).
 
 ### Autostart not working
 
-Syncthing Tray's autostart is implemented by install a .desktop file in `~/.config/autostart`. However, due to sandboxing by flatpak, this file is placed in `~/.var/app/org.martchus.syncthingtray/config/autostart`. Also the generated `.desktop` is not suitable for flatpak, it actually cannot start the application.
+Syncthing Tray's autostart is implemented by install a .desktop file in `~/.config/autostart`. However, due to sandboxing by flatpak, this file is placed in `~/.var/app/io.github.martchus.syncthingtray/config/autostart`. Also the generated `.desktop` is not suitable for flatpak, it actually cannot start the application.
 
 The workaround is to create a symlink manually:
 
@@ -23,19 +23,19 @@ mkdir -p $HOME/.config/autostart
 2. If installed as per-user application (`flatpak install --user`):
 
 ```bash
-ln -sf $HOME/.local/share/flatpak/app/org.martchus.syncthingtray/current/active/export/share/applications/org.martchus.syncthingtray.desktop $HOME/.config/autostart/
+ln -sf $HOME/.local/share/flatpak/app/io.github.martchus.syncthingtray/current/active/export/share/applications/io.github.martchus.syncthingtray.desktop $HOME/.config/autostart/
 ```
 
 3. If installed as system-wide application (`flatpak install`):
 
 ```bash
-ln -sf /var/lib/flatpak/app/org.martchus.syncthingtray/current/active/export/share/applications/org.martchus.syncthingtray.desktop $HOME/.config/autostart/
+ln -sf /var/lib/flatpak/app/io.github.martchus.syncthingtray/current/active/export/share/applications/io.github.martchus.syncthingtray.desktop $HOME/.config/autostart/
 ```
 
 To stop from autostart, just remove the symlink:
 
 ```bash
-rm $HOME/.config/autostart/org.martchus.syncthingtray.desktop
+rm $HOME/.config/autostart/io.github.martchus.syncthingtray.desktop
 ```
 
 ### Syncthing Tray stuck or failed on initialize
@@ -54,7 +54,7 @@ mv ~/.local/state/syncthing ~/.local/state/syncthing.bak
 The filesystem access is limited to `/home`. To modify it, use [Flatseal](https://flathub.org/apps/com.github.tchx84.Flatseal), or with command:
 
 ```bash
-flatpak override org.martchus.syncthingtray --filesystem=<PATH>
+flatpak override io.github.martchus.syncthingtray --filesystem=<PATH>
 ```
 
 ## FAQ
@@ -65,9 +65,17 @@ No you don't. This package already contains the syncthing program.
 
 ### Where is the configuration file?
 
-They are located in `~/.var/app/org.martchus.syncthingtray`.
+They are located in `~/.var/app/io.github.martchus.syncthingtray`.
 
 ## Deploying
+
+### Install develop environments
+
+```bash
+flatpak install --user org.kde.Sdk/x86_64/6.7 \
+    org.kde.Platform/x86_64/6.7 \
+    org.freedesktop.Sdk.Extension.golang/x86_64/23.08
+```
 
 ### Generate cpan-generated-sources.json
 
@@ -79,12 +87,12 @@ chmod +x ./tools/flatpak_cpan_generator.sh
 ### Build the application
 
 ```bash
-flatpak run org.flatpak.Builder build-dir org.martchus.syncthingtray.yml
+flatpak run org.flatpak.Builder build-dir io.github.martchus.syncthingtray.yml
 ```
 
 ### Test the build
 
 ```bash
-flatpak run org.flatpak.Builder --user --install --force-clean build-dir org.martchus.syncthingtray.yml
-flatpak run org.martchus.syncthingtray.yml
+flatpak run org.flatpak.Builder --user --install --force-clean build-dir io.github.martchus.syncthingtray.yml
+flatpak run io.github.martchus.syncthingtray.yml
 ```
