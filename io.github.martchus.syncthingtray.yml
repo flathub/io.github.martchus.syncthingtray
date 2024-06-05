@@ -19,7 +19,7 @@ finish-args:
   - --talk-name=org.kde.StatusNotifierWatcher
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=com.canonical.AppMenu.Registrar
-rename-appdata-file: syncthingtray.appdata.xml
+rename-appdata-file: syncthingtray.metainfo.xml
 rename-desktop-file: syncthingtray.desktop
 rename-icon: syncthingtray
 cleanup:
@@ -91,8 +91,6 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
-      - type: patch
-        path: patches/0001-Specify-the-developer-ID-in-AppStream-meta-data.patch
   - name: qtutilities
     buildsystem: cmake-ninja
     config-opts:
@@ -161,6 +159,7 @@ modules:
       - -DNO_PLASMOID=ON
       - -DNO_FILE_ITEM_ACTION_PLUGIN=ON
       - -DNO_AUTOSTART_SETTINGS:BOOL=ON
+      - -DMETA_DEVELOPER_ID:STRING=io.github.martchus
     sources:
       - type: git
         url: https://github.com/Martchus/syncthingtray.git
