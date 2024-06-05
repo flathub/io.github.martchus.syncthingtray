@@ -160,6 +160,7 @@ modules:
       - -DNO_FILE_ITEM_ACTION_PLUGIN=ON
       - -DNO_AUTOSTART_SETTINGS:BOOL=ON
       - -DMETA_DEVELOPER_ID:STRING=io.github.martchus
+      - -DNO_AUTOSTART_SETTINGS:BOOL=ON
     sources:
       - type: git
         url: https://github.com/Martchus/syncthingtray.git
@@ -169,7 +170,4 @@ modules:
           type: git
           tag-pattern: ^v([\d.]+)$
           is-important: true
-      - type: patch
-        path: patches/0002-Disable-Autostart.patch
-      - type: patch
-        path: patches/0003-Disable-Autostart-In-Setup-Wizard.patch
+
