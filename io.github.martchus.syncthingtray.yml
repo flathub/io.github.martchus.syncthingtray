@@ -72,8 +72,8 @@ modules:
       - ./b2 --with-filesystem -j $FLATPAK_BUILDER_N_JOBS link=static install
     sources:
       - type: archive
-        url: https://boostorg.jfrog.io/artifactory/main/release/1.85.0/source/boost_1_85_0.tar.bz2
-        sha256: 7009fe1faa1697476bdc7027703a2badb84e849b7b0baad5086b087b971f8617
+        url: https://boostorg.jfrog.io/artifactory/main/release/1.86.0/source/boost_1_86_0.tar.bz2
+        sha256: 1bed88e40401b2cb7a1f76d4bab499e352fa4d0c5f31c0dbae64e24d34d7513b
         x-checker-data:
           type: anitya
           project-id: 6845
@@ -86,8 +86,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/cpp-utilities.git
-        tag: v5.26.0
-        commit: da739f34459c9dc6726b03a4c8525fe9ac63afc6
+        tag: v5.26.1
+        commit: 313b902cd60281cd5e81ee740df68f89154ea36e
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -100,8 +100,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/qtutilities.git
-        tag: v6.14.2
-        commit: 8f1a68f01710688390eb91ccb77352dfeabf9add
+        tag: v6.14.3
+        commit: 5a2886d2ec133b8d6e027fd4510d8411120c1264
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -141,8 +141,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/qtforkawesome.git
-        tag: v0.2.0
-        commit: d363a5c9b030d292a814838f6526d1eb816ca3a2
+        tag: v0.2.1
+        commit: dcfd75924a371556d0b16754bab097cc2a2670e8
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -162,8 +162,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/syncthingtray.git
-        tag: v1.6.0
-        commit: c10b2a8a38061803b308fe6763c2c58127b6dffa
+        tag: v1.6.1
+        commit: ab7bc74f4865eb1b8f1ca445a7501c3280ee9427
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
