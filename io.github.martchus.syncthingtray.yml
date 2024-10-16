@@ -59,8 +59,8 @@ modules:
     sources:
       # Use git will raise `inconsistent vendoring` error, so use archive here.
       - type: archive
-        url: https://github.com/syncthing/syncthing/releases/download/v1.27.12/syncthing-source-v1.27.12.tar.gz
-        sha256: 5531f0e1bb81b824a2ab62f070e745c142e1328a15229de47b0cb596b5bae417
+        url: https://github.com/syncthing/syncthing/releases/download/v1.28.0/syncthing-source-v1.28.0.tar.gz
+        sha256: 73b4030f9fca381f58f4966db48cc135cd8232fe9e8853b5651de0f0bf4cfbf7
         x-checker-data:
           type: anitya
           project-id: 11814
@@ -141,8 +141,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/qtforkawesome.git
-        tag: v0.2.1
-        commit: dcfd75924a371556d0b16754bab097cc2a2670e8
+        tag: v0.2.2
+        commit: 8f4a465a8b744b9ca25133a6317a5517dfdc7b86
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -162,8 +162,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/syncthingtray.git
-        tag: v1.6.2
-        commit: 97bcea6cd46823a33715b0cd449d01814377642f
+        tag: v1.6.3
+        commit: 8cc5a7c28eda1eddb34efddd5dffc9ba856b3757
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
