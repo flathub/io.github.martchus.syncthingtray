@@ -58,8 +58,8 @@ modules:
     sources:
       # Use git will raise `inconsistent vendoring` error, so use archive here.
       - type: archive
-        url: https://github.com/syncthing/syncthing/releases/download/v1.28.1/syncthing-source-v1.28.1.tar.gz
-        sha256: e965995bfa3b3cf62d935246a259e764703d4aedfa030ec310a287dca0e1459a
+        url: https://github.com/syncthing/syncthing/releases/download/v1.29.1/syncthing-source-v1.29.1.tar.gz
+        sha256: 24e0106c320afa707439caa4c8e9b3ef0b85ec7bd8d40b5c323d18dbdb9276ee
         x-checker-data:
           type: anitya
           project-id: 11814
@@ -85,8 +85,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/cpp-utilities.git
-        tag: v5.27.0
-        commit: e47ad5e8c16ad2112e3fb775678595688c0c547c
+        tag: v5.27.2
+        commit: af06c9061323f7cab3fc015c2ecc88ea6a1f5e88
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -99,8 +99,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/qtutilities.git
-        tag: v6.14.4
-        commit: cc333672ac7ee5936c65a5c90d912ea3f2039fce
+        tag: v6.14.5
+        commit: 16eb2c2243daad065bb2c0a0f4a0e6c5aeca06bd
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -161,8 +161,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/syncthingtray.git
-        tag: v1.6.4
-        commit: 50197e957359fa93aac84222e29c3167ce09c7cb
+        tag: v1.7.1
+        commit: 0cd4b1e1bf1d4a51abf555e12b56ec2468b2e0ee
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
