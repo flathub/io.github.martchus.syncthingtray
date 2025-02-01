@@ -58,8 +58,8 @@ modules:
     sources:
       # Use git will raise `inconsistent vendoring` error, so use archive here.
       - type: archive
-        url: https://github.com/syncthing/syncthing/releases/download/v1.29.1/syncthing-source-v1.29.1.tar.gz
-        sha256: 24e0106c320afa707439caa4c8e9b3ef0b85ec7bd8d40b5c323d18dbdb9276ee
+        url: https://github.com/syncthing/syncthing/releases/download/v1.29.2/syncthing-source-v1.29.2.tar.gz
+        sha256: c7b6bc36af1af6f1cb304f4ec4c16743760ef6e8b3586f31dc11439d5d5fd427
         x-checker-data:
           type: anitya
           project-id: 11814
@@ -85,8 +85,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/cpp-utilities.git
-        tag: v5.27.2
-        commit: af06c9061323f7cab3fc015c2ecc88ea6a1f5e88
+        tag: v5.27.3
+        commit: 4550eaf4e12021ae92bc0cac2158dac60b6d9f69
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -99,8 +99,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/qtutilities.git
-        tag: v6.14.5
-        commit: 16eb2c2243daad065bb2c0a0f4a0e6c5aeca06bd
+        tag: v6.14.6
+        commit: d1fac8f37db855b747c022e12dce8c9bb9122cdf
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -140,8 +140,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/qtforkawesome.git
-        tag: v0.2.3
-        commit: cef99f7f5a539543c33159903307bd418cd38fef
+        tag: v0.3.0
+        commit: e27f9228671312a8d0228d1609ced278df31be0b
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -161,8 +161,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/syncthingtray.git
-        tag: v1.7.1
-        commit: 0cd4b1e1bf1d4a51abf555e12b56ec2468b2e0ee
+        tag: v1.7.2
+        commit: 6fdca8529ea379bbbc6043d367d1e76e169869ee
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
