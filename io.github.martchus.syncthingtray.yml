@@ -161,8 +161,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/syncthingtray.git
-        tag: v1.7.4
-        commit: dbe5a59c9023351a5bc0a66918e77b393565e64c
+        tag: v1.7.5
+        commit: e49b58ab21d47b4525f6820b04831428635afbb0
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
