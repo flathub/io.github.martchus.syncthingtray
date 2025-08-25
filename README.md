@@ -72,9 +72,9 @@ They are located in `~/.var/app/io.github.martchus.syncthingtray`.
 ### Install develop environments
 
 ```bash
-flatpak install --user org.kde.Sdk/x86_64/6.7 \
-    org.kde.Platform/x86_64/6.7 \
-    org.freedesktop.Sdk.Extension.golang/x86_64/23.08
+flatpak install --user org.kde.Sdk/x86_64/6.8 \
+    org.kde.Platform/x86_64/6.8 \
+    org.freedesktop.Sdk.Extension.golang/x86_64/24.08
 ```
 
 ### Generate cpan-generated-sources.json
