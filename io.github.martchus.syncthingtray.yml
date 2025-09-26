@@ -59,8 +59,8 @@ modules:
     sources:
       # Use git will raise `inconsistent vendoring` error, so use archive here.
       - type: archive
-        url: https://github.com/syncthing/syncthing/releases/download/v2.0.5/syncthing-source-v2.0.5.tar.gz
-        sha256: c7fed474e5a047bbf86d73b8bbf1fd7ffefeccc7342a7b4686a3dfa2a30693e2
+        url: https://github.com/syncthing/syncthing/releases/download/v2.0.10/syncthing-source-v2.0.10.tar.gz
+        sha256: c36d11060580e290dabbd01a56f38b0ae58e6873031c25712bb7b5fdaaec8942
         x-checker-data:
           type: anitya
           project-id: 11814
@@ -86,8 +86,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/cpp-utilities.git
-        tag: v5.30.0
-        commit: 741219947d4ad4e2d64157eabac4cbb81cf96519
+        tag: v5.31.0
+        commit: 7c7f5aedb4437990d08030cc1482f75eece9825d
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -100,8 +100,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/qtutilities.git
-        tag: v6.18.1
-        commit: 62990189b0acf6ef4fe199edc02a1bb13b7a70fa
+        tag: v6.18.2
+        commit: a0fabc37f895ee1101aefd408a97df801a3c828d
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -162,8 +162,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/syncthingtray.git
-        tag: v2.0.1
-        commit: e41d010e024d99e5b62186bc0473262545b7be3e
+        tag: v2.0.2
+        commit: c57a7f51fbb5ca133ab438c4bda79f93e20612a6
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
