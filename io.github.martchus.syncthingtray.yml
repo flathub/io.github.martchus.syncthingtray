@@ -59,8 +59,8 @@ modules:
     sources:
       # Use git will raise `inconsistent vendoring` error, so use archive here.
       - type: archive
-        url: https://github.com/syncthing/syncthing/releases/download/v2.0.10/syncthing-source-v2.0.10.tar.gz
-        sha256: c36d11060580e290dabbd01a56f38b0ae58e6873031c25712bb7b5fdaaec8942
+        url: https://github.com/syncthing/syncthing/releases/download/v2.0.11/syncthing-source-v2.0.11.tar.gz
+        sha256: a9656cded5048bac4937e7046b1b4d5fb6d78bca01df2eed495335be6d4ab643
         x-checker-data:
           type: anitya
           project-id: 11814
@@ -86,8 +86,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/cpp-utilities.git
-        tag: v5.31.0
-        commit: 7c7f5aedb4437990d08030cc1482f75eece9825d
+        tag: v5.31.1
+        commit: 5163240f36adf5a1e3426c22cd9bcb37577db696
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -100,8 +100,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/qtutilities.git
-        tag: v6.18.2
-        commit: a0fabc37f895ee1101aefd408a97df801a3c828d
+        tag: v6.18.3
+        commit: 37c3e457d767e8336859cdbd2bcd91d15640f41d
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -141,8 +141,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/qtforkawesome.git
-        tag: v0.3.1
-        commit: 679ead8f03aa614987c76e2caf6ad6fbc1e7e256
+        tag: v0.3.2
+        commit: 42fe0be74ad6ee075d91f2b96d9bc3eb7717c9d5
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -162,8 +162,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/syncthingtray.git
-        tag: v2.0.2
-        commit: c57a7f51fbb5ca133ab438c4bda79f93e20612a6
+        tag: v2.0.3
+        commit: 8e82f550bac02219ef1923880dfe30618fafa8ae
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
