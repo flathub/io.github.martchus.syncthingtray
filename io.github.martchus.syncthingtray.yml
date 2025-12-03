@@ -1,6 +1,6 @@
 id: io.github.martchus.syncthingtray
 runtime: org.kde.Platform
-runtime-version: '6.8'
+runtime-version: '6.10'
 sdk: org.kde.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.golang
@@ -130,8 +130,13 @@ modules:
   - name: qtforkawesome
     buildsystem: cmake-ninja
     build-options:
-      env:
-        PERL5LIB: /app/lib/perl5/site_perl
+      arch:
+        aarch64:
+          env:
+            PERL5LIB: /app/lib/perl5/site_perl/5.42/aarch64-linux-gnu
+        x86_64:
+          env:
+            PERL5LIB: /app/lib/perl5/site_perl/5.42/x86_64-linux-gnu
     config-opts:
       - -DCMAKE_BUILD_TYPE:STRING=Release
       - -DQT_PACKAGE_PREFIX:STRING=Qt6
