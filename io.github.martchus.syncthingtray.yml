@@ -59,8 +59,8 @@ modules:
     sources:
       # Use git will raise `inconsistent vendoring` error, so use archive here.
       - type: archive
-        url: https://github.com/syncthing/syncthing/releases/download/v2.0.12/syncthing-source-v2.0.12.tar.gz
-        sha256: 56004ae6d974aa387c3c6a734eb98aafd5d6159fc657a1f4c618e0b1814fadae
+        url: https://github.com/syncthing/syncthing/releases/download/v2.0.13/syncthing-source-v2.0.13.tar.gz
+        sha256: fd7c93e01a6d61faa84adda8b22479dd7fd106144fbbb2eb15d773707d8a382e
         x-checker-data:
           type: anitya
           project-id: 11814
@@ -72,8 +72,8 @@ modules:
       - ./b2 --with-filesystem -j $FLATPAK_BUILDER_N_JOBS link=static install
     sources:
       - type: archive
-        url: https://archives.boost.io/release/1.89.0/source/boost_1_89_0.tar.bz2
-        sha256: 85a33fa22621b4f314f8e85e1a5e2a9363d22e4f4992925d4bb3bc631b5a0c7a
+        url: https://archives.boost.io/release/1.90.0/source/boost_1_90_0.tar.bz2
+        sha256: 49551aff3b22cbc5c5a9ed3dbc92f0e23ea50a0f7325b0d198b705e8ee3fc305
         x-checker-data:
           type: anitya
           project-id: 6845
@@ -86,8 +86,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/cpp-utilities.git
-        tag: v5.32.0
-        commit: e4765dd31af42ec748ab785d944c32c1432a09b2
+        tag: v5.32.1
+        commit: 36579b157486bc518e13b226d024a8888697f9f8
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -100,8 +100,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/qtutilities.git
-        tag: v6.18.4
-        commit: 36a7804f56ebdf67ce74e6e06d03c19c0d2e3a6c
+        tag: v6.19.0
+        commit: 04fe4e063fa05f8cedaf20dfeaa48491c58d4a9f
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -167,8 +167,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/syncthingtray.git
-        tag: v2.0.5
-        commit: b4c7e166907bfca55862ab807a40b71b6c9af17d
+        tag: v2.0.6
+        commit: c6a606315f2df2e978691942b64eac187902ad68
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
