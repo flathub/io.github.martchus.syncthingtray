@@ -59,8 +59,8 @@ modules:
     sources:
       # Use git will raise `inconsistent vendoring` error, so use archive here.
       - type: archive
-        url: https://github.com/syncthing/syncthing/releases/download/v2.0.14/syncthing-source-v2.0.14.tar.gz
-        sha256: fec36ce20bbcd6e6d1cb70cfb0af7a45c6221581361d9bb92807389b24703a02
+        url: https://github.com/syncthing/syncthing/releases/download/v2.0.15/syncthing-source-v2.0.15.tar.gz
+        sha256: 8104091ed30bdce7bb462b99bad5bf695704dea39459001f3a088c4cee0e1368
         x-checker-data:
           type: anitya
           project-id: 11814
@@ -167,8 +167,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/syncthingtray.git
-        tag: v2.0.7
-        commit: 10e45c21df8ab276618c74481ebd9a98b898e8da
+        tag: v2.0.8
+        commit: 493f60f2327481373a81d05c3aa15195b2e8cc72
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
