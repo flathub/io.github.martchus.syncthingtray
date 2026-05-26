@@ -100,8 +100,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/qtutilities.git
-        tag: v6.21.1
-        commit: 3e151bddbca1bf72a56ba4c73caf78966f8c81a2
+        tag: v6.21.2
+        commit: d84eed2af9cf48b3e3dcf1b55e7442a1eeb270cc
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -146,8 +146,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/qtforkawesome.git
-        tag: v0.3.2
-        commit: 42fe0be74ad6ee075d91f2b96d9bc3eb7717c9d5
+        tag: v0.3.3
+        commit: 5f2f82dedae82d0bbf1c06e8e2dd307f1db4e0c4
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -167,8 +167,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/syncthingtray.git
-        tag: v2.1.0
-        commit: 9fbb2e7a54764ce570f001fe761d440c44fe8ffe
+        tag: v2.1.1
+        commit: 38b2c533b93656290079c228b208ad426ac4ba7a
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
