@@ -97,6 +97,7 @@ modules:
       - -DCMAKE_BUILD_TYPE:STRING=Release
       - -DQT_PACKAGE_PREFIX:STRING='Qt6'
       - -DBUILTIN_TRANSLATIONS:BOOL=ON
+      - -DQUICK_GUI=ON
     sources:
       - type: git
         url: https://github.com/Martchus/qtutilities.git
@@ -143,6 +144,7 @@ modules:
       - -DBUILTIN_TRANSLATIONS:BOOL=ON
       - -DFORK_AWESOME_FONT_FILE=/app/ForkAwesome/forkawesome-webfont.woff2
       - -DFORK_AWESOME_ICON_DEFINITIONS=/app/ForkAwesome/icons.yml
+      - -DQUICK_GUI=ON
     sources:
       - type: git
         url: https://github.com/Martchus/qtforkawesome.git
@@ -164,6 +166,8 @@ modules:
       - -DNO_PLASMOID=ON
       - -DNO_FILE_ITEM_ACTION_PLUGIN=ON
       - -DNO_AUTOSTART_SETTINGS:BOOL=ON
+      - -DQUICK_GUI=ON
+      - -DQUICK_GUI_CONTROLS_STYLE=dynamic
     sources:
       - type: git
         url: https://github.com/Martchus/syncthingtray.git
