@@ -123,7 +123,7 @@ modules:
       - perl-libs/install.sh
     post-install:
       # Fix eu-strip failed with `Permission denied`.
-      - chmod -Rf u+w /app/lib/perl5/site_perl
+      - chmod -Rf u+w /app/lib/perl5
     sources:
       - cpan-generated-sources.json
     cleanup:
@@ -131,13 +131,8 @@ modules:
   - name: qtforkawesome
     buildsystem: cmake-ninja
     build-options:
-      arch:
-        aarch64:
-          env:
-            PERL5LIB: /app/lib/perl5/site_perl/5.44/aarch64-linux-gnu
-        x86_64:
-          env:
-            PERL5LIB: /app/lib/perl5/site_perl/5.44/x86_64-linux-gnu
+      env:
+        PERL5LIB: /app/lib/perl5
     config-opts:
       - -DCMAKE_BUILD_TYPE:STRING=Release
       - -DQT_PACKAGE_PREFIX:STRING=Qt6
