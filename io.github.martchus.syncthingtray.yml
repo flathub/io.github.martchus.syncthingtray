@@ -134,10 +134,10 @@ modules:
       arch:
         aarch64:
           env:
-            PERL5LIB: /app/lib/perl5/site_perl/5.42/aarch64-linux-gnu
+            PERL5LIB: /app/lib/perl5/site_perl/5.44/aarch64-linux-gnu
         x86_64:
           env:
-            PERL5LIB: /app/lib/perl5/site_perl/5.42/x86_64-linux-gnu
+            PERL5LIB: /app/lib/perl5/site_perl/5.44/x86_64-linux-gnu
     config-opts:
       - -DCMAKE_BUILD_TYPE:STRING=Release
       - -DQT_PACKAGE_PREFIX:STRING=Qt6
