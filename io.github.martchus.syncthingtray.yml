@@ -59,8 +59,8 @@ modules:
     sources:
       # Use git will raise `inconsistent vendoring` error, so use archive here.
       - type: archive
-        url: https://github.com/syncthing/syncthing/releases/download/v2.1.3/syncthing-source-v2.1.3.tar.gz
-        sha256: f34bc1b3219e02ac1eca0b1446f582af8fe13f789da5f8c679ba9cac0396bf81
+        url: https://github.com/syncthing/syncthing/releases/download/v2.1.5/syncthing-source-v2.1.5.tar.gz
+        sha256: 11f129cff64fb4ba7cda33f9dae3a39eab8738a60bbbe8813cadecfdc94bd13d
         x-checker-data:
           type: anitya
           project-id: 11814
@@ -72,8 +72,8 @@ modules:
       - ./b2 --with-filesystem -j $FLATPAK_BUILDER_N_JOBS link=static install
     sources:
       - type: archive
-        url: https://archives.boost.io/release/1.90.0/source/boost_1_90_0.tar.bz2
-        sha256: 49551aff3b22cbc5c5a9ed3dbc92f0e23ea50a0f7325b0d198b705e8ee3fc305
+        url: https://archives.boost.io/release/1.92.0/source/boost_1_92_0.tar.bz2
+        sha256: 5c1d40cb8e19adbf740a4ec2da35b3e58f3f5804b1dce44deb53df72193cbc6c
         x-checker-data:
           type: anitya
           project-id: 6845
@@ -101,8 +101,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/qtutilities.git
-        tag: v6.22.0
-        commit: abc7b666a09b4a14f64e3f8578b3ce3925f1b2b0
+        tag: v6.22.2
+        commit: 90e0c5e5017b8fd135de62f2f3b7fe4c68e4d0af
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -134,10 +134,10 @@ modules:
       arch:
         aarch64:
           env:
-            PERL5LIB: /app/lib/perl5/site_perl/5.42/aarch64-linux-gnu
+            PERL5LIB: /app/lib/perl5/site_perl/5.44/aarch64-linux-gnu
         x86_64:
           env:
-            PERL5LIB: /app/lib/perl5/site_perl/5.42/x86_64-linux-gnu
+            PERL5LIB: /app/lib/perl5/site_perl/5.44/x86_64-linux-gnu
     config-opts:
       - -DCMAKE_BUILD_TYPE:STRING=Release
       - -DQT_PACKAGE_PREFIX:STRING=Qt6
@@ -171,8 +171,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/syncthingtray.git
-        tag: v2.1.4
-        commit: 09b17c24f4db98593904ccc193df32337a81fea2
+        tag: v2.1.5
+        commit: 06e21d99722eef69b4813713c79062382c92d0e7
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
