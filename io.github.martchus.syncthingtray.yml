@@ -86,8 +86,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/cpp-utilities.git
-        tag: v5.36.0
-        commit: 136a80292ceb0f17dc003b52979b1525142eee93
+        tag: v5.37.0
+        commit: e914976d3b12fd4f1fa4235d45e5078b31c6f176
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -166,8 +166,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Martchus/syncthingtray.git
-        tag: v2.1.6
-        commit: c7173733ed41d51dec48bb20b02df696443e9fa8
+        tag: v2.1.7
+        commit: 175702d707f8956b2dced0625e49df4c9c0edd4c
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
